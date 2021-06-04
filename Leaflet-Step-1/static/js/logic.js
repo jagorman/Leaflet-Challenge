@@ -39,11 +39,11 @@ function createEarthquakes(earthquakeData) {
     }
     earthquakeMarkers.push(
       L.circle(latlng, {
-        stroke: false,
+        stroke: true,
         fillOpacity: 0.5,
-        color: "white",
+        color: "black",
         fillColor: color,
-        radius: magnitude*5000
+        radius: magnitude*50000
       }).bindPopup("<h3>" + earthquakeData[i].properties.title +
           "</h3><hr><p>" + new Date(earthquakeData[i].properties.time) + "</p>")
     )
