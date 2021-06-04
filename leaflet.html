@@ -14,7 +14,7 @@
     crossorigin="" />
 
   <!--CSS -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 
 <body>
@@ -28,21 +28,37 @@
     </a>
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="leaflet.html">About Project</a>
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
       </li>
-      <li class="nav-item"></li>
-    <a class="nav-link" href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">USAG Earthquake Data</a></li>
+      <a class="nav-link" href="https://earthquake.usgs.gov/ "target="_blank">USAG Earthquake Data</a></li>
       <li class="nav-item">
-        <a class="nav-link" href="https://github.com/fraxen/tectonicplates.">Tectonic Code Source</a>
+        <a class="nav-link" href="https://github.com/fraxen/tectonicplates. "target="_blank">Tectonic Code Source</a>
       </li>
-      
-      
-      </li></li>
+  
+
     </ul>
   </div>
 </nav>
-  <!-- map -->
-  <div id="map"></div>
+<div id="About">
+  <h2>About Project</h2><br>
+
+  <p>This project visualizes data from the United States Geological Survey (USGS). You are seeing all the recorded earthquakes in the past week, updated in real time.</p>
+  
+  <p>The size of each circle reflects the magnitude of the earthquake. The color reflects the depth of the quake. The color scheme is rainbow,
+     with lesser depths being on the purple end of the spectrum, greater depths being on the red end of the spectrum. Selecting a circle will provide you 
+     more information about the earthquake. A legend has been provided</p>
+
+  <p>In addition, tectonic outlines have been provided as well as user controlled overlays</p>
+
+  <p>The USGS is responsible for providing scientific data about natural hazards, 
+    the health of our ecosystems and environment; and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, 
+    relevant, and useful information about the Earth and its processes. </p><br>
+    <div id="media">
+    <img src="assets/USGS logo.png"
+    width="400" 
+    height="100" />
+  
+  </div>
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
